@@ -8,7 +8,7 @@
 # variable for each activity and each subject.
 #
 
-setwd("~/Dropbox/Coursera/Cleaning Data/UCI HAR Dataset/")
+setwd("UCI HAR Dataset")
 
 #
 # returns a list with two entries: featureNames and activityNames
@@ -87,4 +87,4 @@ data <- arrange(data, subjectId, activity)
 
 by_subject_activity <- group_by(data, subjectId, activity)
 tidy <- summarise_each(by_subject_activity, funs(mean))
-write.table(tidy, file="../coursera-cleaning-data/tidy.txt", row.names = FALSE)
+write.table(tidy, file="../tidy.txt", row.names = FALSE)
