@@ -30,7 +30,7 @@ The [run_analysis.R](run_analysis.R) script performs the steps requested by the 
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Note that step 4 is done in conunction with step 1 simply because it is much
+Note that step 4 is done in conjunction with step 1 simply because it is much
 easier to do it that way and there is no downside to doing so.
 
 The data is presented in a wide format where each row has the subjectId, the
