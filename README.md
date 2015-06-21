@@ -20,3 +20,20 @@ tidyData <- read.table("tidy_data.txt", header=TRUE)
 View(tidyData)
 ```
 
+## Description of run_analysis.R
+
+The run_analysis.R script performs the steps requested by the assigment:
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Note that step 4 is done in conunction with step 1 simply because it is much
+easier to do it that way and there is no downside to doing so.
+
+The data is presented in a wide format where each row has the subjectId, the
+activity name and all of the mean and standard deviation measurements as
+columns with the value of each row being the mean of the all the values
+sharing the same subjectId and activity.
