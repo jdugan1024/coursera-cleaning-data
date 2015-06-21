@@ -14,7 +14,6 @@ for each subjectId we present the mean of each othe above variables for each
 activity performed. The result is that we have the mean of the mean and mean
 of the standard deviation for each of the variables.
 
-
 subjectId: is the human being for which these variables were collected
 
 activity: is the activity performed by the subject when the variables were
@@ -30,31 +29,38 @@ collected. The possible activities are:
 The mean and the standard deviation of the following variables are included in
 this data set:
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+    tBodyAcc-XYZ
+    tGravityAcc-XYZ
+    tBodyAccJerk-XYZ
+    tBodyGyro-XYZ
+    tBodyGyroJerk-XYZ
+    tBodyAccMag
+    tGravityAccMag
+    tBodyAccJerkMag
+    tBodyGyroMag
+    tBodyGyroJerkMag
+    fBodyAcc-XYZ
+    fBodyAccJerk-XYZ
+    fBodyGyro-XYZ
+    fBodyAccMag
+    fBodyAccJerkMag
+    fBodyGyroMag
+    fBodyGyroJerkMag
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+    gravityMean
+    tBodyAccMean
+    tBodyAccJerkMean
+    tBodyGyroMean
+    tBodyGyroJerkMean
+
+NOTE: The project description was not terribly specific and so every feature
+from the initial dataset which matched 'mean' or 'std' was included. This
+ensures that all desired data is included. If the intention was to have a
+subset of the included data this would be solved by whomever assigned this
+task to me asking to have the code slightly updated. This would be a very
+quick fix.
