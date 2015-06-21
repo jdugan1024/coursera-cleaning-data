@@ -22,7 +22,7 @@ View(tidyData)
 
 ## Description of run_analysis.R
 
-The run_analysis.R script performs the steps requested by the assigment:
+The [run_analysis.R](run_analysis.R) script performs the steps requested by the assigment:
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -37,3 +37,6 @@ The data is presented in a wide format where each row has the subjectId, the
 activity name and all of the mean and standard deviation measurements as
 columns with the value of each row being the mean of the all the values
 sharing the same subjectId and activity.
+
+See the comments in [run_analysis.R](run_analysis.R) for the specific details
+of how the code works.
